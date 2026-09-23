@@ -1,0 +1,120 @@
+
+.roadmap-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stage-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.stage-card:hover {
+  border-color: var(--border-hover);
+}
+
+.stage-header {
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  gap: 16px;
+}
+
+.stage-badge {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--accent-brand);
+  font-weight: 800;
+  font-size: 0.85rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+}
+
+.stage-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  flex: 1;
+}
+
+.toggle-icon {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  width: 24px;
+  text-align: center;
+}
+
+.stage-content {
+  padding: 0 20px 20px;
+  border-top: 1px solid var(--border-color);
+  margin-top: 4px;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.stage-content.hidden {
+  display: none;
+}
+
+.stage-content .subtitle {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin: 16px 0 20px;
+  font-style: italic;
+}
+
+.stage-content h3 {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-secondary);
+  margin: 16px 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stage-content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.stage-content li {
+  position: relative;
+  padding-left: 20px;
+  color: var(--text-primary);
+  font-size: 0.925rem;
+}
+
+.stage-content li::before {
+  content: "•";
+  position: absolute;
+  left: 4px;
+  color: var(--accent-brand);
+}
+
+.move-on {
+  background: var(--accent-brand-glow);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  margin-top: 12px;
+}
+
+.move-on strong {
+  color: #60a5fa;
+}
