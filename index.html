@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ROADMAP2026 — Full-Stack Developer Roadmap</title>
+  
+  <!-- CSS Stylesheets (To be created) -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/roadmap.css" />
+  <link rel="stylesheet" href="css/profile.css" />
+</head>
+<body>
+
+  <!-- FIXED NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">ROADMAP2026</div>
+      
+      <button id="creator-profile-btn" class="profile-btn" aria-label="Open Creator Profile">
+        <span class="profile-avatar-text">JE</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Full-Stack Developer Roadmap</h1>
+      <p>A practical path from beginner to building real applications.</p>
+    </div>
+  </section>
+
+  <!-- CATEGORY FILTER TABS -->
+  <nav class="filter-tabs-container">
+    <div class="filter-tabs">
+      <button class="tab-btn active" data-filter="all">All</button>
+      <button class="tab-btn" data-filter="basics">Basics</button>
+      <button class="tab-btn" data-filter="frontend">Frontend</button>
+      <button class="tab-btn" data-filter="backend">Backend</button>
+      <button class="tab-btn" data-filter="advanced">Advanced</button>
+    </div>
+  </nav>
+
+  <!-- MAIN ROADMAP STAGES CONTAINER (Populated by render.js) -->
+  <main id="roadmap-container" class="roadmap-container">
+    <!-- JS renders the 13 stage accordion cards here -->
+  </main>
+
+  <!-- CREATOR PROFILE BACKDROP OVERLAY -->
+  <div id="creator-overlay" class="overlay"></div>
+
+  <!-- CREATOR PROFILE SLIDE-OVER DRAWER -->
+  <aside id="creator-drawer" class="creator-drawer" aria-hidden="true">
+    <button id="close-drawer-btn" class="close-btn" aria-label="Close Profile">&times;</button>
+    
+    <div class="drawer-content">
+      <!-- Profile Header -->
+      <div class="profile-header">
+        <div class="profile-avatar">JE</div>
+        <h2 class="profile-name">Job Emmanuel</h2>
+        <p class="profile-role">Creator & Developer</p>
+      </div>
+
+      <!-- About Section -->
+      <section class="drawer-section">
+        <h3>About</h3>
+        <p class="profile-bio">
+          Computer Science student at OAU. Full-stack developer building clean, responsive, and intuitive web applications.
+        </p>
+      </section>
+
+      <!-- Join Channel Section -->
+      <section class="drawer-section channel-section">
+        <h3>Join My Channel</h3>
+        <p>Get updates, code tips, and roadmap resources directly on WhatsApp:</p>
+        <a 
+          href="https://whatsapp.com/channel/0029Vb8lrbTLSmba5kX0up3E" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="whatsapp-channel-btn"
+        >
+          <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M12.004 2c-5.523 0-10 4.477-10 10 0 1.8.48 3.5 1.32 4.98L2 22l5.16-1.32C8.59 21.5 10.25 22 12.004 22c5.523 0 10-4.477 10-10s-4.477-10-10-10zm0 18c-1.58 0-3.08-.43-4.38-1.2l-.31-.18-3.06.78.8-2.98-.2-.33A7.95 7.95 0 0 1 4.004 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/>
+          </svg>
+          Join WhatsApp Channel
+        </a>
+      </section>
+
+      <!-- Connect Links Section -->
+      <section class="drawer-section">
+        <h3>Connect</h3>
+        <ul class="social-links">
+          <li>
+            <a href="https://github.com/Emmanuelkorede" target="_blank" rel="noopener noreferrer">
+              <span>GitHub</span>
+              <span class="handle">@Emmanuelkorede</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/jobemmanuel_dev" target="_blank" rel="noopener noreferrer">
+              <span>Twitter / X</span>
+              <span class="handle">@jobemmanuel_dev</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/job.emmauel.io" target="_blank" rel="noopener noreferrer">
+              <span>Instagram</span>
+              <span class="handle">@job.emmauel.io</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://tiktok.com/@job.emmanuel.io" target="_blank" rel="noopener noreferrer">
+              <span>TikTok</span>
+              <span class="handle">@job.emmanuel.io</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/2349122865246" target="_blank" rel="noopener noreferrer">
+              <span>WhatsApp Direct</span>
+              <span class="handle">+234 912 286 5246</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </aside>
+
+  <!-- JAVASCRIPT MODULES -->
+  <script type="module" src="js/data.js"></script>
+  <script type="module" src="js/render.js"></script>
+  <script type="module" src="js/profile.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
