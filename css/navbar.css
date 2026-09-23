@@ -1,0 +1,117 @@
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--navbar-height);
+  background: rgba(10, 12, 16, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-color);
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: var(--max-width);
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: 1px;
+  color: var(--text-primary);
+}
+
+.profile-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.3);
+}
+
+.profile-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 18px rgba(139, 92, 246, 0.5);
+}
+
+.profile-avatar-text {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 48px 20px 24px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  background: linear-gradient(180deg, #ffffff 0%, #9ca3af 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+}
+
+/* Filter Tabs */
+.filter-tabs-container {
+  max-width: var(--max-width);
+  margin: 0 auto 32px;
+  padding: 0 20px;
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scrollbar-width: none;
+}
+
+.filter-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.tab-btn {
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: var(--transition);
+}
+
+.tab-btn:hover {
+  background: var(--bg-card-hover);
+  color: var(--text-primary);
+}
+
+.tab-btn.active {
+  background: var(--text-primary);
+  color: var(--bg-main);
+  border-color: var(--text-primary);
+}

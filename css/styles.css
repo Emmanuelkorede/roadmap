@@ -1,0 +1,57 @@
+
+:root {
+  --bg-main: #0a0c10;
+  --bg-card: #12161f;
+  --bg-card-hover: #1a202c;
+  --bg-drawer: #0f131a;
+  --border-color: #222938;
+  --border-hover: #333d52;
+  
+  --text-primary: #f3f4f6;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
+  
+  --accent-green: #25d366;
+  --accent-green-hover: #1fbe58;
+  --accent-brand: #3b82f6;
+  --accent-brand-glow: rgba(59, 130, 246, 0.15);
+
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --navbar-height: 64px;
+  --max-width: 840px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  line-height: 1.6;
+  padding-top: var(--navbar-height);
+  -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
