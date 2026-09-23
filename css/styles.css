@@ -15,6 +15,8 @@
   
   --accent-brand: #3b82f6;
   --accent-brand-glow: rgba(59, 130, 246, 0.12);
+  --accent-green: #25d366;
+  --accent-green-hover: #1fbe58;
 
   /* Modern Font Family */
   --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
