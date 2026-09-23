@@ -66,55 +66,67 @@
   display: none;
 }
 
+/* Card Subtitle */
 .stage-content .subtitle {
   color: var(--text-secondary);
-  font-size: 0.95rem;
+  font-size: 0.925rem;
+  font-weight: 500;
+  line-height: 1.5;
   margin: 16px 0 20px;
-  font-style: italic;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed var(--border-color);
 }
 
+/* Section Headings inside Cards */
 .stage-content h3 {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: var(--text-secondary);
-  margin: 16px 0 10px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
+  letter-spacing: 0.8px;
+  color: var(--text-muted);
+  margin: 18px 0 12px;
 }
 
+/* List Items inside Cards */
 .stage-content ul {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
   margin-bottom: 20px;
 }
 
 .stage-content li {
   position: relative;
-  padding-left: 20px;
-  color: var(--text-primary);
-  font-size: 0.925rem;
+  padding-left: 22px;
+  color: #e5e7eb;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
 }
 
 .stage-content li::before {
   content: "•";
   position: absolute;
-  left: 4px;
+  left: 6px;
   color: var(--accent-brand);
+  font-size: 1.1rem;
 }
 
+/* "Move on when" callout box */
 .move-on {
   background: var(--accent-brand-glow);
-  border: 1px solid rgba(59, 130, 246, 0.3);
-  padding: 14px 16px;
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  padding: 14px 18px;
   border-radius: var(--radius-sm);
-  font-size: 0.9rem;
-  color: var(--text-primary);
-  margin-top: 12px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #d1d5db;
+  margin-top: 16px;
 }
 
 .move-on strong {
-  color: #60a5fa;
+  color: #93c5fd;
+  font-weight: 700;
 }
